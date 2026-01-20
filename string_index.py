@@ -27,3 +27,18 @@ print(credit_number[::-1])
 # you get the string values reversed
 print(credit_number[-1])
 print(credit_number[-10:])
+
+
+print("----------------")
+
+# exercise 
+email = input("Enter your e-mail: ")
+
+index = email.index("@")
+indexdot = email.index(".com")
+print(indexdot)
+
+username = email[:index]
+domain = email[index + 1: indexdot]
+
+print(f"Your username is {username} and your domain is '{domain}'.")
