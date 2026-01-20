@@ -28,6 +28,22 @@ print(credit_number[::-1])
 print(credit_number[-1])
 print(credit_number[-10:])
 
+print("----------------")
+price1 = 1200.234209
+price2 = -99409.03004
+price3 = 5903.129023
+
+# :> justify to right
+# :< justify to left
+# :^ justify to center
+# :10 to fill the item to complete ten spaces
+# :, comma to split 1000th numbers
+# :X10 to fill the space with X's
+
+print(f"price1 ${price1:>+12,.4f}")
+print(f"price2 ${price2:<12,.2f}")
+print(f"price3 ${price3:^12.1f}")
+
 
 print("----------------")
 
