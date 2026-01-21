@@ -1,2 +1,2 @@
-# Programacao_Python
-Estudo da linguagem de programação python.
+# Python_foundations
+Studying basic programming in python.
