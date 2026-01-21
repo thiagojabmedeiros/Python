@@ -1,2 +1,2 @@
 # Python_foundations
-Studying basic programming in python.
+In this repository i had been studying basic python foundations to prepare myself and to be able to do leetcode exercises.
