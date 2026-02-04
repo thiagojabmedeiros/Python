@@ -43,4 +43,4 @@ y = 3.0
 
 x = x / y
 
-print(x)fefaefa
+print(x)
