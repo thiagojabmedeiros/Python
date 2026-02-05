@@ -36,3 +36,9 @@ print(dict)
 ## printing the keys and items
 for key, value in dict.items():
     print(f"{key} {value}")
+
+## if you have some element that is able to call a function you can do like this:
+dict["list"] = []
+dict["list"].append("thiago")
+dict["list"].append("bruno")
+print(dict)
