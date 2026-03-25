@@ -1,0 +1,10 @@
+setlist = set()
+setlist.add(1) # O(1)
+setlist.add(2) # O(1)
+setlist.add(3) # O(1)
+setlist.add(4) # O(1)
+setlist.add(-1) # O(1)
+setlist.pop() # O(1)
+setlist.pop() # O(1) 
+setlist.remove(-1) # O(1) - remove the element
+print(setlist)
