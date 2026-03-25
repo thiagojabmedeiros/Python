@@ -1,4 +1,2 @@
-name = "thiago"
-surname = "medeiros"
-
-print(max(name, surname))
+nums = [1,2,4,6]
+print(nums[2:2])
