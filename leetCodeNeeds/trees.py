@@ -1,16 +1,46 @@
 class Node:
     def __init__(self, value):
         self.value = value
-        self.right = None
         self.left = None
+        self.right = None
 
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
-root.right.left = Node(6)
-root.right.right = Node(7)
+class BinaryTree:
+    def __init__(self):
+        self.root = None
+    
+    def insert(self, value):
+        if self.root is None:
+            self.root = Node(value)
+        else:
+            return self.insertChild(self.root, value)
+        
+    def insertChild(self, node, value):
+        if node.value > value:
+            if node.left is None:
+                node.left = Node(value)
+            else:
+                return self.insertChild(node.left, value)
+        else:
+            if node.right is None:
+                node.right = Node(value)
+            else:
+                return self.insertChild(node.right, value)
+    
+    def search(self, target):
+        return self.searchx(self.root, target)
+    
+    def searchx(self, node, target):
+        if node is None:
+            print(False)
+            return False
+        else:
+            if node.value == target:
+                print(True)
+                return True
+            elif node.value > target:
+                return self.searchx(node.left, target)
+            else:
+                return self.searchx(node.right, target)            
 
 def inOrder(node):
     if node:
@@ -28,8 +58,8 @@ def postOrder(node):
         postOrder(node.right)
         print(node.value)
 
-inOrder(root)
-print("#######")
-preOrder(root)
-print("#######")
-postOrder(root)
+tree = BinaryTree()
+for val in [64,37,12,89,40,90,21,50]:
+    tree.insert(val)
+
+inOrder(tree.root)
